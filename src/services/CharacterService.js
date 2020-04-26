@@ -1,7 +1,8 @@
 let axios = require('axios');
+const baseUrl = require('./conf').baseUrl;
 
 export function loadCharacters() {
-  return axios.get('/api/characters').then(response => {
+  return axios.get(`${baseUrl}/api/characters`).then(response => {
     return response['data'].map((character) => {
       return {
         name: character["name"],

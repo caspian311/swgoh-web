@@ -9,7 +9,6 @@ class Character extends Component {
       <div className="character">
         <div class="character-images">
           <img src={this.props.image} alt={this.props.name} />
-          <img src={this.props.image} alt={this.props.name} />
         </div>
         <div className="character-data">
           <span className="label">Name:</span>

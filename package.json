@@ -21,7 +21,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "watch": "npm-watch"
+    "watch": "npm-watch",
+    "deploy": "./node_modules/.bin/s3-deploy './build/**' --cwd './build/' --deleteRemoved --bucket swgoh.coffeemonkey.net"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,7 +40,8 @@
     ]
   },
   "devDependencies": {
-    "npm-watch": "^0.6.0"
+    "npm-watch": "^0.6.0",
+    "s3-deploy": "^1.4.0"
   },
   "watch": {
     "build": "src/"
